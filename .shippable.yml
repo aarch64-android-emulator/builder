@@ -1,0 +1,11 @@
+language: c
+runtime:
+  nodePool: shippable_shared_aarch64
+git:
+   submodules: false
+env:
+  global:
+    - LC_ALL=C
+build:
+  ci:
+    - curl https://storage.googleapis.com/git-repo-downloads/repo > /bin/repo
